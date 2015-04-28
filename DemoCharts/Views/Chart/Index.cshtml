@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@model DemoCharts.Models.BrowserShareChartData
+<h2>Index</h2>
+
+<script>
+    function MyFunction() {
+        alert("dfsdf");
+    }
+</script>
+<div style="display: inline-block">
+       @* <div>
+            <img usemap="#ChartImageMap" src="@Url.Action("GetChart")"
+                alt="Asp.Net Charting generated image"
+                style="width:450px;height:300px;border-width:0px;" />
+        
+        </div>*@
+       @{ Html.RenderAction("DisplayChart"); }
+
+    </div>
